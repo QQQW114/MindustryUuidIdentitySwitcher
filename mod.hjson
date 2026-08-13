@@ -1,0 +1,7 @@
+name: uuid-identity-switcher
+displayName: UUID Identity Switcher
+author: ChatGPT
+description: "Client-side script mod for testing Mindustry permission systems with multiple local UUID/USID identities. Non-Steam only."
+version: "0.2.3"
+minGameVersion: "154"
+hidden: true
