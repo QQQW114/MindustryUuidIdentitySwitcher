@@ -1,11 +1,9 @@
 # Mindustry UUID Identity Switcher
 
-用于本地测试服务器权限系统的 Mindustry 客户端隐藏脚本 mod。
+用于测试服务器权限系统的 Mindustry 客户端 mod。
 
 特点：
 
-- 桌面端/安卓端通用，不需要 Java/Dex 编译。
-- 隐藏 mod：不会加入客户端 mod 列表，避免普通服务器因“多余 mod”拒绝连接。
 - 支持保存多个身份档案。
 - 首次加载会保存安装前的原始 UUID；切回“无默认身份/未绑定服务器”时会尽量还原原始 UUID/USID。
 - 每个身份包含：
