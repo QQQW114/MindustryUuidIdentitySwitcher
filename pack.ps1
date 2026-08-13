@@ -48,7 +48,7 @@ minGameVersion: "154"
 hidden: true
 "@
 
-# Android/MindustryX compatibility package: visible metadata encourages Android
+# Android/MindustryX experimental package (not currently working): visible metadata encourages Android
 # builds that mishandle hidden script mods to load it. main.js immediately sets
 # loaded.meta.hidden=true at runtime, so normal server mod-list checks should not
 # see it after scripts have loaded.
@@ -56,7 +56,7 @@ $androidMeta = @"
 name: uuid-identity-switcher-android
 displayName: UUID Identity Switcher Android
 author: ChatGPT
-description: "$commonDescription Android compatibility package; visible in metadata but hides itself from server mod list at runtime."
+description: "$commonDescription Experimental Android package (not currently working); visible in metadata but hides itself from server mod list at runtime."
 version: "0.2.3"
 minGameVersion: "154"
 hidden: false
@@ -69,7 +69,7 @@ $androidVisibleMeta = @"
 name: uuid-identity-switcher-android-visible
 displayName: UUID Identity Switcher Android Visible
 author: ChatGPT
-description: "$commonDescription Diagnostic visible Android package; may be sent in server mod list."
+description: "$commonDescription Experimental diagnostic visible Android package (not currently working); may be sent in server mod list."
 version: "0.2.3"
 minGameVersion: "154"
 hidden: false

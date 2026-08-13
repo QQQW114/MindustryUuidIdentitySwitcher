@@ -4,6 +4,7 @@
 
 特点：
 
+- 桌面端通用，不需要 Java/Dex 编译；安卓端目前无法使用。
 - 支持保存多个身份档案。
 - 首次加载会保存安装前的原始 UUID；切回“无默认身份/未绑定服务器”时会尽量还原原始 UUID/USID。
 - 每个身份包含：
@@ -34,8 +35,8 @@ dist/uuid-identity-switcher-android-visible.zip
 包说明：
 
 - `uuid-identity-switcher.zip`：默认隐藏版，适合桌面端；不会加入连接时的 mod 列表。
-- `uuid-identity-switcher-android.zip`：安卓/MindustryX 兼容版。元数据里先设为可见，避免部分安卓构建漏加载隐藏脚本；脚本启动后会把自己重新标记为隐藏，尽量不进入服务器 mod 列表。
-- `uuid-identity-switcher-android-visible.zip`：诊断版，始终可见。只用于确认安卓是否正确导入/启用 mod；连接普通服务器时可能因多余 mod 被拒。
+- `uuid-identity-switcher-android.zip`：安卓/MindustryX 实验版（安卓目前无法使用，仅供调试）。元数据里先设为可见，避免部分安卓构建漏加载隐藏脚本；脚本启动后会把自己重新标记为隐藏，尽量不进入服务器 mod 列表。
+- `uuid-identity-switcher-android-visible.zip`：诊断版（安卓目前无法使用），始终可见。只用于确认安卓是否正确导入/启用 mod；连接普通服务器时可能因多余 mod 被拒。
 
 ## 使用
 
@@ -47,7 +48,7 @@ dist/uuid-identity-switcher-android-visible.zip
 
 然后点击“打开身份管理器”。
 
-安卓 / MindustryX 说明：MindustryX 会提前构建设置菜单，旧版脚本注册的分类可能已经加入但不显示；0.2.1 起会强制刷新设置菜单，并且分类页只放一个轻量的“打开身份管理器”入口。如果安卓导入隐藏版后仍看不到，请改用 `dist/uuid-identity-switcher-android.zip`。如果还是看不到，再用 `dist/uuid-identity-switcher-android-visible.zip` 诊断：若诊断版也不在 Mods 列表中，说明包没有被正确导入/启用；若在列表中但无设置入口，说明脚本加载报错，需要查看安卓 `last_log.txt`。
+安卓 / MindustryX 说明（安卓目前无法使用，本节仅作参考）：MindustryX 会提前构建设置菜单，旧版脚本注册的分类可能已经加入但不显示；0.2.1 起会强制刷新设置菜单，并且分类页只放一个轻量的“打开身份管理器”入口。如果安卓导入隐藏版后仍看不到，请改用 `dist/uuid-identity-switcher-android.zip`。如果还是看不到，再用 `dist/uuid-identity-switcher-android-visible.zip` 诊断：若诊断版也不在 Mods 列表中，说明包没有被正确导入/启用；若在列表中但无设置入口，说明脚本加载报错，需要查看安卓 `last_log.txt`。
 
 常用流程：
 
